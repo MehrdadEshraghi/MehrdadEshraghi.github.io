@@ -27,6 +27,8 @@ class Birthday {
   }
   
   onClick(evt) {
+     const audio = new Audio('fireworks.mp3');
+     audio.play();
      let x = evt.clientX || evt.touches && evt.touches[0].pageX
      let y = evt.clientY || evt.touches && evt.touches[0].pageY
      
